@@ -10,7 +10,7 @@ Puppet::Reports.register_report(:prometheus) do
   # Source: evenup/evenup-graphite_reporter code base
   # lib/puppet/reports/graphite.rb
   configfile = File.join([File.dirname(Puppet.settings[:config]),
-                          'prometheus_test.yaml'])
+                          'prometheus.yaml'])
   unless File.exist?(configfile)
     raise(Puppet::ParseError, "Prometheus report config file #{configfile} not readable")
   end
