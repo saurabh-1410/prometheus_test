@@ -87,7 +87,7 @@ EOS
     # TYPE puppet_report_example_metric gauge
     EOS
 
-    new_metrics["puppet_report_example_metric{#{common_values.join(',')}}"] = 60
+    new_metrics["puppet_report_example_metric{#{common_values.join(',')}}"] = 70
     
     epochtime = DateTime.now.new_offset(0).strftime('%Q').to_i / 1000.0
     new_metrics["puppet_report{#{common_values.join(',')}}"] = epochtime
